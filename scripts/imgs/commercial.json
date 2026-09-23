@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "modern glass office building exterior architecture low angle"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "modern glass office building exterior architecture low angle",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ffdaae858dba.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "2786px",
+      "original_height": "3738px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/feca45578d76.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "4352px",
+      "original_height": "3264px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/70f330a06ee1.jpg",
+      "caption": "",
+      "source": "Build Green New Homes",
+      "original_width": "896px",
+      "original_height": "1344px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/95c4f5f1245d.jpg",
+      "caption": "",
+      "source": "Homedit",
+      "original_width": "1331px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7f8dde02cd9b.png",
+      "caption": "",
+      "source": "Saint-Gobain Glass",
+      "original_width": "2048px",
+      "original_height": "1536px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/938d9216aff2.jpg",
+      "caption": "",
+      "source": "Gensler",
+      "original_width": "2000px",
+      "original_height": "1333px"
+    }
+  ]
+}

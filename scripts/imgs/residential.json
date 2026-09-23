@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "residential house construction framing wooden structure workers"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "residential house construction framing wooden structure workers",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ba40a7005199.jpg",
+      "caption": "",
+      "source": "The Home Depot",
+      "original_width": "2050px",
+      "original_height": "1250px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/92d05c6dc2b7.jpg",
+      "caption": "",
+      "source": "ArchitectureCourses.org",
+      "original_width": "2048px",
+      "original_height": "1152px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/adbc75ecafa9.jpg",
+      "caption": "",
+      "source": "Kangarieux Framing",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c058ab0e04e4.jpg",
+      "caption": "",
+      "source": "West Fraser",
+      "original_width": "2716px",
+      "original_height": "1810px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6ae8f13fddec.jpg",
+      "caption": "",
+      "source": "Ross Homes & Drafting",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6da4e4ee46ff.jpg",
+      "caption": "",
+      "source": "The Home Depot",
+      "original_width": "2050px",
+      "original_height": "1250px"
+    }
+  ]
+}

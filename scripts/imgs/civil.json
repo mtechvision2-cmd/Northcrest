@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "bridge civil engineering infrastructure construction site"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "bridge civil engineering infrastructure construction site",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/089154d212dd.jpg",
+      "caption": "",
+      "source": "New Civil Engineer",
+      "original_width": "2560px",
+      "original_height": "1681px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d3d01b27cb1a.jpg",
+      "caption": "",
+      "source": "Custom Truck One Source",
+      "original_width": "2560px",
+      "original_height": "1683px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8a54bdbae4e7.jpg",
+      "caption": "",
+      "source": "LinkedIn",
+      "original_width": "800px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8c7f2eeb8694.jpg",
+      "caption": "",
+      "source": "DB Sterlin Consultants, Inc.",
+      "original_width": "1800px",
+      "original_height": "1349px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2c2e1d71d249.jpg",
+      "caption": "",
+      "source": "LinkedIn",
+      "original_width": "800px",
+      "original_height": "1131px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/4c9789f1d6e8.jpg",
+      "caption": "",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    }
+  ]
+}

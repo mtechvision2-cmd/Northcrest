@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "steel frame warehouse industrial building under construction"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "steel frame warehouse industrial building under construction",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/80d93d2bf7c2.jpg",
+      "caption": "",
+      "source": "Steel Structure Building, Camp House , Prefabricated House",
+      "original_width": "4608px",
+      "original_height": "3456px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/57469caf53de.jpeg",
+      "caption": "",
+      "source": "Pebsteel",
+      "original_width": "1426px",
+      "original_height": "1071px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8d7cf90144f2.jpg",
+      "caption": "",
+      "source": "Alibaba.com",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6148006fe32a.jpg",
+      "caption": "",
+      "source": "Allied Steel Buildings",
+      "original_width": "1920px",
+      "original_height": "1440px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/45a7f5616767.jpg",
+      "caption": "",
+      "source": "Structural Steel",
+      "original_width": "1080px",
+      "original_height": "810px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7cc9e8c8d823.png",
+      "caption": "",
+      "source": "Modular Housing & Steel Structures Manufacturer | Xiaobao",
+      "original_width": "1298px",
+      "original_height": "1279px"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Netlify deployment settings for Northcrest Construction Group
+# https://docs.netlify.com/frameworks/next-js/overview/
+
+[build]
+  command = "npx prisma generate && npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

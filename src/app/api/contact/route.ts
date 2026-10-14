@@ -3,6 +3,10 @@ import { db } from "@/lib/db";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Where a writable SQLite database exists (z.ai sandbox, self-hosted server)
+// leads are stored with Prisma. Where it does not (Netlify serverless), the
+// lead is printed to the function logs instead so it is never lost, and the
+// visitor still sees a success message.
 export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => null);
@@ -43,13 +47,37 @@ export async function POST(request: Request) {
       );
     }
 
-    const saved = await db.contactMessage.create({
-      data: { name, email, phone, projectType, budget, message },
-    });
+    if (db) {
+      try {
+        const saved = await db.contactMessage.create({
+          data: { name, email, phone, projectType, budget, message },
+        });
 
-    return NextResponse.json({ ok: true, id: saved.id }, { status: 201 });
+        return NextResponse.json({ ok: true, id: saved.id }, { status: 201 });
+      } catch (err) {
+        console.error(
+          "[contact] database write failed, logging the lead instead:",
+          err
+        );
+      }
+    }
+
+    console.log(
+      "[contact-lead]",
+      JSON.stringify({
+        name,
+        email,
+        phone,
+        projectType,
+        budget,
+        message,
+        receivedAt: new Date().toISOString(),
+      })
+    );
+
+    return NextResponse.json({ ok: true, stored: "log" }, { status: 201 });
   } catch (err) {
-    console.error("[contact] failed to store message:", err);
+    console.error("[contact] failed to handle submission:", err);
     return NextResponse.json(
       {
         error:

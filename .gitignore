@@ -52,3 +52,16 @@ prompt
 server.log
 # Skills directory
 /skills/
+
+# z.ai sandbox internals (not part of the website)
+/scripts/
+/tests/
+/examples/
+/mini-services/
+/.zscripts/
+/upload/
+/download/
+/db/
+/Caddyfile
+/bin/dev.pid
+next-env.d.ts

@@ -24,3 +24,26 @@ Stage Summary:
 - Deliverable: full Next.js site in /home/z/my-project (src/app/page.tsx hash router; src/components/site/*; src/lib/site-data.ts all content; src/app/api/contact/route.ts; prisma/schema.prisma).
 - Brand: Northcrest Construction Group, ink navy + safety orange, Barlow/Barlow Condensed.
 - Pages: Home, About, Services, Projects, Contact. Footer credit link verified.
+
+---
+Task ID: 2
+Agent: Super Z (main agent)
+Task: Prepare the finished Northcrest site for GitHub push and Netlify deployment while keeping it fully accessible in the z.ai sandbox
+
+Work Log:
+- Verified sandbox health before changes: homepage HTTP 200, contact API storing rows in SQLite.
+- next.config.ts: output "standalone" now applied only when NETLIFY env is absent, so Netlify's official Next runtime can build the project.
+- package.json: renamed to northcrest-construction v1.0.0; build script now delegates the standalone copy step to bin/postbuild.mjs which is a no-op when no standalone output exists.
+- Added netlify.toml: build command "npx prisma generate && npm run build", publish ".next", NODE_VERSION 22, @netlify/plugin-nextjs.
+- src/lib/db.ts: Prisma client is now created only when DATABASE_URL exists and wrapped in try/catch (returns null otherwise).
+- src/app/api/contact/route.ts: if no writable database exists (Netlify/Vercel serverless), the lead is printed to function logs as [contact-lead] and the API still returns 201 so visitors see success.
+- .gitignore: excluded sandbox internals (scripts research artifacts, tests, examples, mini-services, .zscripts, upload, download, db, Caddyfile).
+- Untracked .env, .zscripts, Caddyfile, db/custom.db, scripts/, examples/, mini-services/, download/, tests/ (tracked files went from 222 to 98; all site code retained).
+- Added README.md with local dev, Netlify and Vercel deploy instructions and contact-form storage notes.
+- Committed as 9af1b98 "Prepare site for GitHub and Netlify deployment".
+- Post-change verification: homepage 200, contact POST returned {"ok":true,"id":"cmv7kxe4i0000sw0vlyzz5ir3"}, node bin/postbuild.mjs runs clean.
+
+Stage Summary:
+- Repo is GitHub ready: clean history on branch main, only website code tracked, no secrets, no sqlite data, no ThemeForest research artifacts.
+- Sandbox unaffected: standalone build path, dev server and SQLite contact storage all work as before.
+- Awaiting from user to push: GitHub username, a classic PAT with repo scope (or fine-grained token with Contents read/write if the repo already exists), preferred repo name and visibility.
